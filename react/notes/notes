@@ -1,0 +1,6 @@
+https://www.britannica.com/topic/Simpsons-paradox
+
+that occurs when the marginal association between two categorical variables is qualitatively different from the partial association between the same two variables after controlling for one or more other variables. Simpson’s paradox is important for three critical reasons. First, people often expect statistical relationships to be immutable. They often are not. The relationship between two variables might increase, decrease, or even change direction depending on the set of variables being controlled. Second, Simpson’s paradox is not simply an obscure phenomenon of interest only to a small group of statisticians. Simpson’s paradox is actually one of a large class of association paradoxes. Third, Simpson’s paradox reminds researchers that causal inferences, particularly in nonexperimental studies, can be hazardous. Uncontrolled and even unobserved variables that would eliminate or reverse the association observed between two variables might exist.
+
+https://github.com/ijmbarr/simpsons-paradox
+https://github.com/ijmbarr/simpsons-paradox/blob/master/generating-examples-of-simpsons-paradox.ipynb

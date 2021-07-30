@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Das Simpson-Paradoxon</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<section>
+					<h2>Das Simpson-Paradoxon</h2><br>
+					Breno Menezes
+				</section>
+
+				<section><h3>Überblick</h3>
+					<div style="width:60%;float:left">
+						 <ul>
+							 <li> Einführung </li>
+							 <li> Beispiele</li>
+							 <li> Formelle Definition </li>
+							 <li> Abschluss </li>
+						 </ul>
+					</div>
+				</section>
+
+<!-- ################################################################### New Session ##################################################### -->
+
+				<section><h3>Einführung</h3></section>
+
+				<section><h3> Einführung </h3>
+					<em> Entscheidungen werden auf der Grundlage von Daten getroffen </em><br><br>
+
+					<em> Statistik: Sammlung, Organisation, Analyse, <b>Interpretation</b> und Präsentation von Daten </em> <br><br>
+					
+					<em><b>Interpretation</b> ist subjektiv</em>					
+				</section>
+
+				<section><h3> Interpretation ist subjektiv </h3>
+					<img src="images/normal.jpeg" alt="Skeletons" style="width:80%;background: white;" class="demo-logo">
+				</section>
+
+				<section><h3> Interpretation ist subjektiv </h3>
+					<img src="images/american.png" alt="Skeletons" style="width:80%;background: white;" class="demo-logo">
+				</section>
+
+				<section>
+					<em> Es besteht die Tendenz, dass die allgemeine Schlussfolgerung auch für die spezifischen Fälle gilt</em>					
+				</section>
+
+				<section><h3> Das Simpson-Paradoxon </h3>
+					<em>
+					"... wird eine Gesamtstichprobe in Teilstichproben unterteilt, so können sich in allen Teilstichproben Zusammenhänge zeigen, die systematisch nicht dem Zusammenhang in der Gesamtstichprobe entsprechen oder gar konträr ausfallen."<a href="https://www.gut-erklaert.de/mathematik/gauss-verfahren-gauss-algorithmus.html"><small>[1]</small></a></em>					
+				</section>
+
+<!-- ################################################################### New Session ##################################################### -->		
+				<section><h3>Beispiel 1</h3></section>
+
+				<section>
+					<h3>Mehr Geld macht glücklicher</h3>
+							<div style="width:100%;float:left">
+								<img src="images/graph1.png" alt="Skeletons" style="width:60%;background: white;" class="demo-logo"> <br>
+							</div>
+				</section>
+
+				<section>
+					<h3>Mehr Geld macht glücklicher</h3>
+							<div style="width:100%;float:left">
+								<img src="images/graph2.png" alt="Skeletons" style="width:60%;background: white;" class="demo-logo"> <br>
+							</div>
+				</section>
+
+				<section><h3>Beispiel 2</h3></section>
+
+				<section>
+					<h3>Krankenhaus A oder B?</h3>
+						<div style="width:50%;float:left">
+							<img src="images/hospital_icon.png" alt="Skeletons" style="width:20%;background: white;" class="demo-logo"> <br>
+							<em>Krankenhaus A</em><br><br>
+							<em>900/1000 genesen</em>	<br>
+						</div>
+						<div style="width:50%;float:left;margin-left:0%">
+							<img src="images/hospital_icon.png" alt="Skeletons" style="width:20%;background: white;" class="demo-logo"> <br>
+							<em>Krankenhaus B</em><br><br>
+							<em>800/1000 genesen</em>
+						</div>
+					<h3></h3>
+				</section>
+
+				<!-- <section><h3>besser ins Krankenhaus A gehen, oder?</h3></section> -->
+
+				<section>
+					<h3>Krankenhaus A oder B?</h3>
+						<div style="width:50%;float:left">
+							<img src="images/hospital_icon.png" alt="Skeletons" style="width:20%;background: white;" class="demo-logo"> <br>
+							<em>Krankenhaus A</em><br><br>
+							<em>Schwere Fälle: 30/100 </em>	<br>
+							<em>Einfache Fälle: 870/900 </em> <br><br>
+
+							<em> 30% & 96.7% </em>
+						</div>
+						<div style="width:50%;float:left;margin-left:0%">
+							<img src="images/hospital_icon.png" alt="Skeletons" style="width:20%;background: white;" class="demo-logo"> <br>
+							<em>Krankenhaus B</em><br><br>
+							<em>Schwere Fälle: 210/400 </em>	<br>
+							<em>Einfache Fälle: 590/600 </em>  <br><br>
+							<em> 52.5% & 98.3% </em>
+						</div>
+					<h3></h3>
+				</section>
+
+				<section>
+					<h3>Krankenhaus A oder B?</h3>
+						<ul>
+							<li>Krankenhaus B hat in beiden Fällen bessere Chancen auf Genesung</li>
+							<li>Unbeachtete Variablen (Schweregrad) können die Schlussfolgerung über einen Fakt völlig verändern </li>
+						</ul>
+					<h3></h3>
+				</section>
+<!-- ################################################################### New Session ##################################################### -->				
+				<section><h3>Formelle Definition</h3></section>
+
+				<section>
+					<img src="images/formulae.png" alt="Skeletons" style="width:80%;background: white;" class="demo-logo"> <br>
+				</section>
+
+				<section>
+					<h3>Krankenhaus A oder B?</h3>
+						<div style="width:50%;float:left">
+							<img src="images/hospital_icon.png" alt="Skeletons" style="width:20%;background: white;" class="demo-logo"> <br>
+							<em>Krankenhaus A</em><br><br>
+							<em><small>Schwere Fälle: 30/100 </small> </em>	<br>
+							<em><small>Einfache Fälle: 870/900 </small></em> <br><br>
+							<!-- <em><small> 30% & 96.7% </small></em> <br> -->
+							<em><small>P(G)=0.1 * 0.3 + 0.9 * 0.967 </small></em><br>
+							<em><small>P(G)=0.9 </small></em><br>
+							<em><small>P(G|S)=0.3 </small></em>							
+						</div>
+						<div style="width:50%;float:left;margin-left:0%">
+							<img src="images/hospital_icon.png" alt="Skeletons" style="width:20%;background: white;" class="demo-logo"> <br>
+							<em>Krankenhaus B</em><br><br>
+							<em><small>Schwere Fälle: 210/400 </small></em>	<br>
+							<em><small>Einfache Fälle: 590/600 </small></em>  <br><br>
+							<!-- <em><small>52.5% & 98.3% </small></em> <br> -->
+							<em><small>P(G)=0.4 * 0.525 + 0.6 * 0.983</small> </em> <br>
+							<em><small>P(G)=0.8 </small></em><br>
+							<em><small>P(G|S)=0.52 </small></em>							
+						</div>
+					<h3></h3>
+				</section>
+<!-- ################################################################### New Session ##################################################### -->	
+				<section>
+					<h3>Fehler vermeiden</h3>
+					
+					<ul>
+						<li> Daten zusamen oder separat betrachten?</li>
+						<li> Fokus auf die richtigen Variablen </li>
+						<li> Korrelation vs. Kausalität </li>
+						<!-- <li>Beobachten Sie dasselbe Ereignis aus verschiedenen Perspektiven</li> -->
+					</ul>
+				</section>
+<!-- ################################################################### New Session ##################################################### -->	
+
+				<section><h3>Abschluss</h3></section>
+
+				<section>
+					<h3>Das Simpson-Paradoxon</h3>
+					<em>Statistiken ohne Kontext sind gefährlich</em><br><br>
+
+					<em>Vorabanalyse der Daten ist wichtig</em><br><br>
+
+					<em>Verschiedene Perspektiven analysieren</em>
+
+					<em></em>
+				</section>
+
+<!-- ################################################################### New Session ##################################################### -->	
+
+				<section>
+					<h3>Das Simpson-Paradoxon</h3>
+					<div style="width:100%; float:left">
+						Fragen? <br>
+						<h4>Breno Menezes</h4>
+						<a href="breno.amenezes@gmail.com"><small>breno.amenezes@gmail.com</small></a><br>
+					</div>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
